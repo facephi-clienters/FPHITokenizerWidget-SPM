@@ -1,0 +1,5 @@
+framework module "FPHITokenizerWidget" {
+    umbrella header "FPHITokenizerWidget.h"
+    export *
+    module * { export * }
+}
