@@ -160,6 +160,8 @@ __attribute__((swift_name("TokenizerController")))
 @interface FPHITWTokenizerController : FPHITWBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (FPHITWTokenizeResult *)decryptBase64Data:(NSString *)data __attribute__((swift_name("decryptBase64(data:)")));
+- (FPHITWTokenizeResult *)decryptBase64MapData:(NSString *)data key:(NSString *)key __attribute__((swift_name("decryptBase64Map(data:key:)")));
 - (FPHITWTokenizeResult *)tokenizeByteArrayByteArray:(FPHITWKotlinByteArray *)byteArray key:(NSString *)key __attribute__((swift_name("tokenizeByteArray(byteArray:key:)")));
 - (FPHITWTokenizeResult *)tokenizeImageByteArray:(FPHITWKotlinByteArray *)byteArray __attribute__((swift_name("tokenizeImage(byteArray:)")));
 - (FPHITWTokenizeResult *)tokenizeOCRResultsOcrResults:(FPHITWMutableDictionary<NSString *, NSString *> *)ocrResults __attribute__((swift_name("tokenizeOCRResults(ocrResults:)")));
@@ -226,6 +228,8 @@ __attribute__((swift_name("TokenizerCoreManager")))
 @interface FPHITWTokenizerCoreManager : FPHITWBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (FPHITWKotlinByteArray * _Nullable)decryptBase64Data:(NSString *)data __attribute__((swift_name("decryptBase64(data:)")));
+- (NSString * _Nullable)decryptBase64MapData:(NSString *)data key:(NSString *)key __attribute__((swift_name("decryptBase64Map(data:key:)")));
 - (NSString * _Nullable)tokenizeByteArrayImage:(FPHITWKotlinByteArray *)image key:(NSString *)key __attribute__((swift_name("tokenizeByteArray(image:key:)")));
 - (NSString * _Nullable)tokenizeImageImage:(FPHITWKotlinByteArray *)image __attribute__((swift_name("tokenizeImage(image:)")));
 - (NSString * _Nullable)tokenizeOcrResultsDocumentData:(FPHITWMutableDictionary<NSString *, NSString *> *)documentData __attribute__((swift_name("tokenizeOcrResults(documentData:)")));
