@@ -22,8 +22,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "FPHITokenizerWidget",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHITokenizerWidget/1.1.4/FPHITokenizerWidget.zip",
-            checksum: "401359ce26f91d466e306d8fba12b452cf3ea0da771de46d482c62db35e014b7"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHITokenizerWidget/1.1.5/FPHITokenizerWidget.zip",
+            checksum: "942fa4953a006534174a98c69f693e829051d0778ac16cddda3d4a84d5daa008"
         ),
     ]
 )
